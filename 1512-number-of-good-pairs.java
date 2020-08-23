@@ -17,7 +17,7 @@ class Solution {
 
         for (int num : nums) {
             int currentMatches = map.getOrDefault(num, 0);
-            
+            counter += currentMatches;
             map.put(num, currentMatches+1);
         }
         return counter;
